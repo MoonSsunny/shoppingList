@@ -81,9 +81,9 @@ body {
     display: block;
     width: 100%;
     background-color: #f1f3f5;
-    border: 0;
+    border: none;
     box-shadow: none;
-    outline: 0;
+    outline: none;
     padding: 10px;
 }
 .list_button {

@@ -3,27 +3,27 @@ const listText = document.querySelector(".list_text");
 const listButton = document.querySelector(".list_button");
 const deleteList = document.querySelector(".deleteButton");
 
-function addShopingList() {
+function addShoppingList() {
     let name = 0;
     const inputVal = inputText.value;
     if (!inputVal) {
         return false;
     }
     const content = document.createElement("li");
-    const shopingList = listText.appendChild(content);
-    shopingList.innerHTML = `<p>${inputVal}</p>
-    <button class="deleteButton"><i class="fas fa-minus-circle"></i></button>`;
+    const shoppingList = listText.appendChild(content);
+    shoppingList.innerHTML = `<p>${inputVal}</p>
+<i class="fas fa-minus-circle"></i>`;
     inputText.value = "";
     name++;
 }
 
 function enterkey() {
     if (window.event.keyCode == 13) {
-        addShopingList();
+        addShoppingList();
     }
 }
 
-function deleteShopingList(event) {
+function deleteShoppingList(event) {
     const listbtn = event.target;
     const listParent = listbtn.parentNode;
 }
