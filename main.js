@@ -28,6 +28,6 @@ function deleteShoppingList(event) {
     const listParent = listbtn.parentNode;
 }
 
-listButton.addEventListener("click", addShopingList);
+listButton.addEventListener("click", addShoppingList);
 
 document.addEventListener("click", (e) => {});
