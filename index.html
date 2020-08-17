@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>shopping list</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="list_header">Shopping List</header>
+            <main class="list_main">
+                <!-- shopping item -->
+                <ul class="list_text">
+                    <!-- <li>
+                        <p>우유</p>
+
+                        <i class="fas fa-minus-circle" id="icon"></i>
+                    </li> -->
+                </ul>
+            </main>
+            <form action="#">
+                <input type="text" onkeyup="enterkey()" class="list_input" />
+            </form>
+            <footer class="list_footer">
+                <button class="list_button">
+                    <i class="fas fa-plus-circle"></i>
+                </button>
+            </footer>
+        </div>
+        <script src="./main.js" defer></script>
+    </body>
+</html>
