@@ -59,11 +59,14 @@ body {
     display: inline-block;
 }
 
-.list_text i {
+.list_text .deleteButton {
     position: absolute;
     top: 5px;
     right: 10px;
     color: #1864ab;
+    border: none;
+    outline: none;
+    background: transparent;
     font-size: 1.26rem;
     cursor: pointer;
 }

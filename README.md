@@ -5,6 +5,4 @@
 <img src='https://user-images.githubusercontent.com/62421526/90352362-26391e00-e07e-11ea-89e8-66e05e30fa08.PNG' style='widht:500px'>
 <img src='https://user-images.githubusercontent.com/62421526/90352369-276a4b00-e07e-11ea-803a-51e0a6534ae0.PNG' style='widht:500px'>
 
-> ENTER KEY를 누르면 입력 완료
-> +버튼을 누르면 내용 입력 
-
+> ENTER KEY를 누르면 입력 완료 +버튼을 누르면 내용 입력 , -버튼 클릭시 리스트 삭제

@@ -1,20 +1,23 @@
 const inputText = document.querySelector(".list_input");
 const listText = document.querySelector(".list_text");
 const listButton = document.querySelector(".list_button");
-const deleteList = document.querySelector(".deleteButton");
 
+let id = 0;
 function addShoppingList() {
-    let name = 0;
     const inputVal = inputText.value;
     if (!inputVal) {
         return false;
     }
     const content = document.createElement("li");
+    content.setAttribute("class", "item");
+    content.setAttribute("data-id", id);
     const shoppingList = listText.appendChild(content);
     shoppingList.innerHTML = `<p>${inputVal}</p>
-<i class="fas fa-minus-circle"></i>`;
+     <button class="deleteButton" >
+    <i class="fas fa-minus-circle" data-id=${id}></i>
+    </button>`;
     inputText.value = "";
-    name++;
+    id++;
 }
 
 function enterkey() {
@@ -23,11 +26,12 @@ function enterkey() {
     }
 }
 
-function deleteShoppingList(event) {
-    const listbtn = event.target;
-    const listParent = listbtn.parentNode;
-}
+listText.addEventListener("click", (event) => {
+    const id = event.target.dataset.id;
+    if (id) {
+        const toBeDeleted = document.querySelector(`.item[data-id="${id}"]`);
+        toBeDeleted.remove();
+    }
+});
 
 listButton.addEventListener("click", addShoppingList);
-
-document.addEventListener("click", (e) => {});
